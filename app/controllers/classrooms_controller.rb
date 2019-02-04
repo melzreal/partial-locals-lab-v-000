@@ -1,4 +1,4 @@
-
+require 'pry'
 class ClassroomsController < ApplicationController
   def show
 binding.pry
