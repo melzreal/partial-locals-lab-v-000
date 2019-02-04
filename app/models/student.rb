@@ -19,7 +19,7 @@ class Student < ActiveRecord::Base
     if n.empty?
       all
     else
-      self.all.collect{|student| student if student.name.downcase.include?(n.downcase) }.compact
+      self.all.collect{|student| student if student.name.downcase.include?(n.downcase)}.compact
     end
   end
 
