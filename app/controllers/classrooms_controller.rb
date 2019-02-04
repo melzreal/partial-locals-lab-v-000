@@ -3,7 +3,7 @@ class ClassroomsController < ApplicationController
   def show
 binding.pry
     @classroom = Classroom.find(params[:id])
-    @students = @classroom.students
+    @student = @classroom.students
   end
 
   def index
