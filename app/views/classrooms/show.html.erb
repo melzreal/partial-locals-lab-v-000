@@ -3,17 +3,13 @@
 We now want to call all students in the class:
 
 <%= @students.each do |student|
-  <ul>
-    <li>
+
       Name: <%= student.name %>
-    </li>
-    <li>
+
       Birthday: <%= student.birthday.strftime("%m/%d/%Y")  %>
-    </li>
-    <li>
+
       Hometown: <%= student.hometown.capitalize %>
-    </li>
-  </ul>
+  
 
 
 <% end %>
