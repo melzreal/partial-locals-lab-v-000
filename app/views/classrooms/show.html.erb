@@ -4,12 +4,12 @@ We now want to call all students in the class:
 
 <%= @students.each do |student|
 
-      Name: <%= student.name %>
+  <%= student.name %>
 
-      Birthday: <%= student.birthday.strftime("%m/%d/%Y")  %>
+ <%= student.birthday.strftime("%m/%d/%Y")  %>
 
-      Hometown: <%= student.hometown.capitalize %>
-  
+ <%= student.hometown.capitalize %>
+
 
 
 <% end %>
