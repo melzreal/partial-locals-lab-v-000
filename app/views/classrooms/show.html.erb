@@ -2,8 +2,4 @@
 
 We now want to call all students in the class:
 
-<%= @students.each do |student| %>
-
 <%= render partial: "students/student", locals: {student: @student} %>
-
-<% end %>
