@@ -1,5 +1,6 @@
 <%= render partial: "classroom", locals: {classroom: @classroom} %>
 
 We now want to call all students in the class:
-
-<%= render partial: "students/student", locals: {student: @student} %>
+<% @students.each do |st|
+<%= render partial: "students/student", locals: {student: st} %>
+<% end %>
